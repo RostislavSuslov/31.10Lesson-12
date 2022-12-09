@@ -1,0 +1,151 @@
+
+.first-screen {
+    background-image: url(../img/first-screen.png);
+    background-color: rgb(0, 0, 0);
+    padding: 267px 100px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+
+.first-screen_title {
+    font-family: 'RubikGlitch';
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 89px;
+}
+
+.first-screen_subtitle {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    margin: 0 0 13px;
+}
+
+.first-screen_description {
+
+    font-size: 25px;
+    line-height: 34px;
+    margin: 0 0 49px;
+}
+
+.first-screen_button {
+    background-color: white;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    border-radius: 4px;
+    padding: 23px 49px;
+    border: none;
+}
+
+.first-screen_about {
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    padding: 262px 100px;
+    color: #000000;
+    background-image: url(../img/about-4.png);
+
+}
+
+.first-screen_about_title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+    width: 455px;
+    color: var(--title-color);
+}
+
+.first-screen_about_description {
+    color: #484848;
+    font-size: 20px;
+    line-height: 30px;
+    width: 630px;
+    margin-bottom: 38px;
+}
+
+.first-screen_about_button {
+    background-color: #C83267;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 20px 62px;
+    color: #ffffffff;
+    border: 0;
+}
+
+.about-us {
+    padding: 120px;
+}
+
+.about-us_title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 48.27px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: var(--title-color);
+}
+
+.about-us_subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+}
+
+.about-us .colum {
+    width: 49%;
+}
+
+.about_img {
+    width: 100%;
+}
+
+.about .colum {
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-title {
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 157%;
+    color: var(--title-color);
+    margin-bottom: 48px;
+}
+
+.colum-title {
+    font-size: 72px;
+    line-height: 90px;
+    text-align: center;
+    color: #ffae00bf;
+    margin: 0 0 24px;
+}
+
+.colum-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+    margin-bottom: 48px;
+}
+
+.yellow {
+    color: #ffae00bf
+}
+
+.blue {
+    color: #0732ffbf;
+    margin-top: 200px;
+}
+
+.pink {
+    color: #ff423dbf;
+    margin-top: 44px;
+}
+

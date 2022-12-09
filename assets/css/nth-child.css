@@ -1,0 +1,53 @@
+.example {
+    margin-bottom: 60px;
+}
+
+.child-item {
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.first-child .child-item:first-child {
+    background: red;
+}
+
+.last-child .child-item:last-child {
+    background: red;
+}
+
+.odd .child-item:nth-child(odd) {
+    background: red;
+}
+
+.even .child-item:nth-child(even) {
+    background: red;
+}
+
+.nth-child-4 .child-item:nth-child(4) {
+    background: red;
+}
+
+.nth-child-3n .child-item:nth-child(3n) {
+    background: red;
+}
+
+.nth-child-3n_4 .child-item:nth-child(3n+4) {
+    background:red;
+}
+.nth-child-n_5 .child-item:nth-child(-n+5) {
+    background: red;
+}
+
+.nth-child-3n_10 .child-item:nth-child(-3n+10) {
+    background: red;
+}
+
+.diapozone .child-item:nth-child(n+3):nth-child(-n+8) {
+    background: greenyellow;
+}

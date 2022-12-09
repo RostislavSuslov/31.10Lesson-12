@@ -1,0 +1,95 @@
+.position .example-list_item {
+    font-size: 40px;
+    width: 150px;
+    height: 100px;
+}
+
+.example-list_item.relative {
+    position: relative;
+}
+
+
+.relative-child {
+    font-size: 15px;
+    background: #8bc34a;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 48px;
+    right: 18px;
+}
+
+.example-list_item.absolute {
+    position: absolute;
+    top: 92px;
+    right: 40px;
+}
+
+.relative-child .test {
+    background: red;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.example-list_item.fixed {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: url(/assets/img/icon-phone.webp) center/contain no-repeat;
+}
+
+a.example-list_item.fixed-second {
+    width: 150px;
+    height: 150px;
+}
+ 
+
+/*sticky */
+.exapmle-sticky {
+    background: #2196f3;
+    color: #fff;
+    margin: 120px auto;
+    padding: 90px 12px 120px;
+}
+
+.exapmle-sticky li {
+    font-size: 24px;
+    padding: 6px 0;
+}
+
+.exapmle-sticky {
+    background: #2196f3;
+    color: #fff;
+    margin: 120px auto;
+    padding: 90px 12px 120px;
+}
+
+.exapmle-sticky li {
+    font-size: 24px;
+    padding: 6px 0;
+}
+
+.exapmle-sticky ul {
+    height: 350px;
+    background: rgb(140, 0, 255);
+    overflow: auto;
+    padding: 12px;
+}
+
+
+li.item-sticky {
+    font-size: 30px;
+    padding: 12px;
+    background: red;
+    position: sticky;
+    top: 15px;
+}

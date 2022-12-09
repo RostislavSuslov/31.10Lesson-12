@@ -1,0 +1,129 @@
+.banner-template {
+    padding: 69px 0 70px;
+    background-image: linear-gradient(to top, #D6BBD3 43%, #C9ADC6 43%);
+    margin-bottom: 160px;
+}
+.has-decoration .banner-template__container {
+    position: relative;
+}
+.has-decoration .banner-template__container::before {
+    content: "";
+    font-size: 72px;
+    width: 50px;
+    height: 50px;
+    background: #A78BA4;
+    display: block;
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 50px;
+}
+
+.has-decoration .banner-template__container::after {
+    content: "";
+    font-size: 72px;
+    width: 50px;
+    height: 50px;
+    background: #B08EAD;
+    display: block;
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+}
+
+.banner-template__container{
+    max-width: 1215px;
+    padding-left: 65px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.info-container{
+    padding: 124px 104px 124px 40px;
+    background-color: #B08EAD;
+    min-width: 425px;
+    width: 425px;
+    margin-left: -126px;
+}
+
+.reverse .info-container {
+    margin-left: 36px;
+    margin-right: -27px;
+}
+
+.reverse .img-box {
+    z-index: 1;
+}
+
+.img-z-index  .img-box {
+    z-index: 1;
+}
+
+
+.img-z-index .info-container {
+    margin-left: -33px;
+    padding: 124px 104px 124px 50px;
+}
+
+.info-container__uppertitle {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.info-container__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+    letter-spacing: -0.6px;
+    margin-bottom: 22px;
+}
+
+.info-container__link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.info-container__link:hover:after{
+    width: 100%;
+}
+
+.info-container__link:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    background: white;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+}
+ 
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+
+.revers .info-container {
+    margin-right: 50px;
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}

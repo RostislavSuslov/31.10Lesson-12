@@ -1,0 +1,11 @@
+:root {
+    --text-color: #BA68C8;
+    --bg-color: #B0BEC5;
+    --section-padding: 90px 0 120px;
+    --title-color: #0f0e0e;
+    --title-size: 42px;
+    --tags-table__item-xl: 150px;
+    --tags-table__item-lg: 135px;
+    --tags-table__item-md: 115px;
+    --tags-table__item-sm: 80px;
+}

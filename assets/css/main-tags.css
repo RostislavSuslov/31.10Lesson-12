@@ -1,0 +1,27 @@
+.tags-table__item {
+    display: flex;
+    border: 1px solid #fff;
+}
+
+.tags-table__item-name {
+    padding: 12px;
+    min-height: var(--tags-table__item-xl);
+    background: #000;
+    color: #fff;
+    width: 400px;
+    min-width: 400px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags-table__item-description {
+    background: orangered;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,105 @@
+/* max-width: 575.98px   - mobile vertical
+   max-width: 767.98px   - mobile horizontal  
+   max-width: 991.98px   - tablet vertical
+   max-width: 1199.98px  - tablet horizontal or netbook
+   max-width: 1470.98px  - notebook */
+@media only screen and (max-width: 1470.98px) { /*если меньше или равно*/ /*от 0 до 1470.98px*/
+    .tags-table__item-name {
+        min-height: var(--tags-table__item-lg);
+        font-size: 26px;
+    }
+    
+}
+
+@media only screen and (max-width: 1199.98px) { /*если меньше или равно*/ /*от 0 до 1199.98px*/
+    .tags-table__item-name {
+        min-height: var(--tags-table__item-md);
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) { /*если меньше или равно*/ /*от 0 до 991px*/
+    .tags-table__item{
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .tags-table__item-name {
+        min-width: 100%;
+        width: 100%;
+        
+    }
+
+    .tags-table__item-description {
+        min-height: var(--tags-table__item-md);
+        font-size: 22px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 767.98px) { /*если меньше или равно*/ /*от 0 до 767.98px*/
+    .tags-table__item-name,
+    .tags-table__item-description {
+        min-height: var(--tags-table__item-sm);
+        font-size: 18px;
+    }
+
+    .tags-table__item-description {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) { /*если меньше или равно*/ /*от 0 до 575.98px*/
+  /* body {
+    background-color: #49e30c;
+  } */
+}
+
+
+
+
+/* min-width: 576px
+   min-width: 768px
+   min-width: 992px
+   min-width: 1200px
+   min-width: 1471px
+*/
+
+
+@media only screen and (min-width: 576px) { /*если больше или равно*/ /*от 576px до full size*/
+    /* body {
+      background-color: #e3940c;
+    } */
+}
+@media only screen and (min-width: 768px) { /*если больше или равно*/ /*от 768px до full size*/
+    /* body {
+      background-color: #e3940c;
+    } */
+}
+@media only screen and (min-width: 992px) { /*если больше или равно*/ /*от 992px до full size*/
+    /* body {
+      background-color: #e3940c;
+    } */
+}
+
+@media only screen and (min-width: 1200px) { /*если больше или равно*/ /*от 1200px до full size*/
+    /* body {
+      background-color: #e3940c;
+    } */
+}
+
+@media only screen and (min-width: 1471px) { /*если больше или равно*/ /*от 1471px до full size*/
+    /* body {
+      background-color: #e3940c;
+    } */
+}
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 900.98px) { /*диапазон  от 600px до 900px*/
+    /* .page-title {
+      background: yellow;
+    } */
+}
