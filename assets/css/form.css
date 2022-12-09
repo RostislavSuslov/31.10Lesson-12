@@ -1,0 +1,45 @@
+.custom-form{
+    margin: 90px auto 120px;
+    max-width: 467px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    background: url(/assets/img/space.jpg) center;
+    background-attachment: fixed;
+}
+
+.custom-form .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-form [type="submit"] {
+    max-width: 220px;
+    margin: 36px auto 12px;
+}
+.col-md-6 {
+    position: relative;
+}
+
+.show-hide {
+    position: absolute;
+    top: 29px;
+    right: 17px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/OOjs_UI_icon_eye.svg/1200px-OOjs_UI_icon_eye.svg.png) center/contain;
+}
+
+.nice-select {
+    width: calc(100% - 24px);
+    margin: 12px auto;
+    border: solid 1px #000000;
+    border-radius: 2px;
+}
+.nice-select .list {
+    width: 100%;
+}
+
+
