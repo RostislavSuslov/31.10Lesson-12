@@ -1,0 +1,71 @@
+.transform {
+    width: 100%;
+    height: 300px;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h4.example-title {
+    min-height: 57px;
+}
+
+.transform-example {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.translate .transform-example{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.scale {
+    background-color: aqua;
+}
+
+.scale .transform-example {
+    transform: scale(2.5, 1.5);
+    transition: .3s;
+}
+
+.rotate {
+    background-color: blanchedalmond;
+}
+
+
+.rotate  .transform-example {
+    transform: rotate(45deg);
+}
+
+.skew{
+    background-color: blue;
+}
+
+.skew .transform-example {
+    transform: skew(50deg, -50deg);
+}
+
+.rotate-scale {
+    margin-top: 24px;
+    background-color: chartreuse;
+}
+
+.rotate-scale .transform-example{
+    transform: translate(-50%, -50%) scale(2.5, 1.5);
+}
+
+.sprite .transform-example {
+    width: 64px;
+    height: 64px;
+    background: url(/assets/img/sprite.png) 0 0 no-repeat wheat;
+}
+
+.sprite .transform-example:hover{
+    background-position-y:  -62px;
+}
