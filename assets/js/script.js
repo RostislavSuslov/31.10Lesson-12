@@ -1,24 +1,42 @@
 $(document).ready(function () {
-    $('.phone').mask('+38(000)00-00-000');
-    $('select').niceSelect()
+
+    $('.first-screen-slider').slick({
+        dots: true,
+        appendArrows: ".first-screen__container-arrow",
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                    arrows: false,
+              }
+            } 
+        ]
+    });
 
 
-    $('#password').on('click', function () {
-        $('.show-hide').addClass('d-block')
-    })
+    mobileOnlySlider(".advantages-slider", true, false, 991);
+    function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+        var slider = $($slidername);
+        var settings = {
+            mobileFirst: true,
+            dots: $dots,
+            arrows: $arrows,
+            responsive: [{
+                breakpoint: $breakpoint,
+                settings: "unslick"
+            }]
+        };
 
-    $(document).click(function (event) {
-        if (!$(event.target).is("#password, .show-hide")) {
-            $(".show-hide").removeClass('d-block');
-        }
-    })
+        slider.slick(settings);
 
-    $('.show-hide').on('click', function () {
-        if ($('#password[type=password]').length) {
-            $('#password').attr("type", "text");
-        } else {
-            $('#password').attr("type", "password");
-        }
-    })
+        $(window).on("resize", function () {
+            if ($(window).width() > $breakpoint) {
+                return;
+            }
+            if (!slider.hasClass("slick-initialized")) {
+                return slider.slick(settings);
+            }
+        });
+    } // Mobile Only Slider
 
 });

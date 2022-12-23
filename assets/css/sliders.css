@@ -1,0 +1,344 @@
+:root {
+    --color-primary: #E58D35;
+    --color-secondary: #89C249;
+    --section-margin: 100px;
+    --section-margin-mobile: 55px;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('/assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('/assets/fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('/assets/fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 156.5%;
+    color: #FFFFFF;
+    background-color: #282B38;
+    font-family: 'ProximaNova';
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover:hover,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.container {
+    max-width: 1231px;
+}
+
+section {
+    margin: 0 50px var(--section-margin);
+}
+
+.bg-gray {
+    background: linear-gradient(0deg, #363A4D, #363A4D), #F7F7F7;
+    border-radius: 20px;
+    padding: 90px 0 100px;
+}
+
+.first-screen {
+    position: relative;
+}
+
+.first-screen-slider {
+    position: relative;
+}
+
+.first-screen-slider .slick-slide {
+    padding: 163px 0 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.first-screen-slider .slick-slide .container {
+    min-height: 447px;
+}
+
+.first-screen-slider__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 126%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 500px;
+    margin-bottom: 8px;
+}
+
+.first-screen-slider__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135.5%;
+    color: #FFFFFF;
+    max-width: 500px;
+    padding-right: 160px;
+    margin-bottom: 37px;
+}
+
+.first-screen-slider__btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 146%;
+    background: var(--color-primary);
+    border-radius: 90px;
+    color: #FFFFFF;
+    padding: 21px 33px;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.first-screen-slider__btn img {
+    margin: 0 -13px 0 49px;
+}
+
+
+.slick-dots li {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+}
+
+.slick-dots li button {
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    opacity: 0.9;
+    border: 2px solid #FFFFFF;
+    border-radius: 90px;
+    background-color: transparent;
+    margin: 0 13px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #fff;
+}
+
+.first-screen-slider .slick-dots {
+    position: absolute;
+    bottom: 7px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.slick-dots {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.first-screen__container-arrow {
+    position: absolute;
+    max-width: 1523px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-arrow {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    height: 46px;
+    width: 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42' fill='none'%3E%3Cpath d='M20.5976 0.746181C20.8829 0.460911 21.2395 0.318275 21.6317 0.318275C22.024 0.318275 22.3806 0.460911 22.6658 0.746181C23.2364 1.31673 23.2364 2.24386 22.6658 2.8144L4.4798 21.0004L22.6658 39.1865C23.2364 39.757 23.2364 40.6842 22.6658 41.2547C22.0953 41.8253 21.1682 41.8253 20.5976 41.2547L1.37747 22.0346C0.806928 21.464 0.806929 20.5369 1.37747 19.9663L20.5976 0.746181Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.slick-arrow:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='42' viewBox='0 0 24 42' fill='none'%3E%3Cpath d='M20.5976 0.746183C20.8829 0.460911 21.2395 0.318277 21.6317 0.318277C22.024 0.318277 22.3806 0.460912 22.6658 0.746183C23.2364 1.31673 23.2364 2.24386 22.6658 2.8144L4.4798 21.0004L22.6658 39.1865C23.2364 39.757 23.2364 40.6842 22.6658 41.2547C22.0953 41.8253 21.1682 41.8253 20.5976 41.2547L1.37747 22.0346C0.806929 21.464 0.806929 20.5369 1.37747 19.9663L20.5976 0.746183V0.746183Z' fill='%2389C249'/%3E%3C/svg%3E");
+}
+
+.slick-next {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.template-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 55px;
+}
+
+.template-title::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background-color: var(--color-primary);
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.template-title h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 124.5%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.template-title p {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 6px 0 0;
+}
+
+.advantages-slider__item-content {
+    margin: 48px auto 0;
+    text-align: center;
+    max-width: 263px;
+}
+
+
+.advantages-slider__item-content .img-box {
+    border: 1px solid #6C7188;
+    width: 113px;
+    height: 113px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+}
+
+.advantages-slider__item-content img {
+    background-color: var(--color-secondary);
+    width: 93px;
+    height: 93px;
+    object-fit: none;
+    border-radius: 50%;
+}
+
+.advantages-slider__item-content .text-box {
+    font-size: 18px;
+    line-height: 124.5%;
+}
+
+.advantages-slider .slick-list {
+    margin-bottom: 48px;
+}
+
+
+
+@media only screen and (max-width: 1700.98px) {
+    .first-screen-slider .slick-slide .container {
+        padding-left: 100px;
+    }
+
+    .first-screen__container-arrow {
+        max-width: 1290px;
+        padding: 0 25px
+    }
+}
+
+
+@media only screen and (max-width: 991.98px) {
+    
+    .first-screen-slider__title{
+        font-size: 32px;
+    }
+    .first-screen-slider__subtitle {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    nav.navbar {
+        padding: 0 20px;
+        min-height: 72px;
+        margin-top: -17px;
+    }
+    
+    section {
+        margin: 0 0 var(--section-margin-mobile);
+    }
+    .first-screen-slider .slick-slide {
+        border-radius: 0;
+        padding: 100px 0 90px;
+        position: relative;
+    }
+
+    .first-screen-slider .slick-slide::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(4, 5, 17, 0.6), rgba(4, 5, 17, 0.6)), url(transportation-logistics.jpg);
+    }
+
+    .first-screen-slider .slick-slide .container {
+        padding: 0 20px;
+        min-height: 405px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .first-screen-slider__title, 
+    .first-screen-slider__subtitle{
+       text-align: center;
+       margin-bottom: 10px;
+    }
+
+    .first-screen-slider__subtitle {
+      padding: 0;
+      margin-bottom: 18px;
+    }
+
+    .first-screen-slider__btn {
+        margin: 0 auto;
+    }
+}
+
+[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Cpath d='M2.03328 0L0.0648918 1.97331L11.0316 12.9675L0 24.0484L1.94676 26L13 14.9408L24.0316 26L26 24.0267L14.9684 12.9675L25.9351 1.97331L23.9667 0L13 10.9942L2.03328 0Z' fill='white'/%3E%3C/svg%3E");
+}
